@@ -8,18 +8,17 @@
 void draw()
 {
 	/*lista de vertices*/
-	Vector3 v[2] = { Vector3(3.0, 3.0, 0.0), Vector3(-3.0, -3.0, -3.0) };
+	Vector3 vertices[2] = { 
+			Vector3(0.0, 0.0, 0.0),  Vector3(1.0, 1.0, 0.0)
+	};
 
 	glLineWidth(5);
 	glColor3f(0, 1, 0);
 
 	glBegin(GL_LINES);
 
-	for (int i = 0; i < sizeof(v); ++i)
-	{
-		glVertex3f(v[i].getCoordX(), v[i].getCoordY(), v[i].getCoordZ());
-
-	}
+	glVertex3f(vertices[0].getCoordX(), vertices[0].getCoordY(), vertices[0].getCoordZ());
+	glVertex3f(vertices[1].getCoordX(), vertices[1].getCoordY(), vertices[1].getCoordZ());
 
 	/*glVertex3f(3, 3, 0);
 	glVertex3f(-3, -3, 0);*/
