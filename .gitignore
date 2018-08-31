@@ -336,3 +336,4 @@ ASALocalRun/
 *.vcxproj
 *.vcxproj.*
 resource.h
+*.sln
